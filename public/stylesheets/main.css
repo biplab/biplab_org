@@ -1,0 +1,14 @@
+#home-menu {
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+    position:relative;
+    left:15%;
+    font-size:35px;
+    font-family:helvetica;
+    font-color:black;
+}
+
+a.link {color:red;}
+a.visited {color:red;}
+

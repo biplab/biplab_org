@@ -1,7 +1,22 @@
-@(message: String)
+@(menuItems: List[String])
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message, style = "Java")
-    
+@main("Biplab's homepage") {
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        </head>
+         
+        <body>
+         
+        <table id="home-menu">
+            <tr><td><a href="#">Home</a></td></tr>
+            <tr><td><a href="#">Resume</a></td></tr>
+            <tr><td><a href="#">Biography</a></td></tr>
+            <tr><td><a href="#">Photos</a></td></tr>
+            <tr><td><a href="#">Family</a></td></tr>
+        </ul>
+         
+        </body>
+    </html>
 }
