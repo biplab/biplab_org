@@ -1,14 +1,60 @@
-#home-menu {
-    list-style-type: none;
-    padding:0px;
-    margin:0px;
-    position:relative;
-    left:15%;
-    font-size:35px;
-    font-family:helvetica;
-    font-color:black;
+body
+{
+    margin: 0;
+    padding: 0;
+}
+ul.MainMenu {
+    font-family: Arial, Verdana;
+    font-size: 30px;
+    position: fixed;
+    width: 170px;
+    margin: 20% 15%;
+    padding: 0;
+    list-style: none;
+}
+a {
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: #2C5463;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+ul.MainMenu li a:hover 
+{
+    border-bottom: 3px solid rgb(216,216,216);
+    -webkit-animation: anim 100ms;
+    animation: anim 100ms;
+    /*border-top: 3px solid rgb(216,216,216);*/
+    /*color: #ffffff;*/
+    font-weight: bold;
+    /*background: #617F8A;*/
+    background: #ffffff;
+}
+@keyframes anim
+{
+    from {
+        background: #ffffff;
+        font-weight: normal;
+    }
+    to {
+        background: rgb(216,216,216);
+        font-weight: bold;
+    }
+}
+@-webkit-keyframes anim
+{
+    from {
+        background: #ffffff;
+        font-weight: normal;
+    }
+    to {
+        background: rgb(216,216,216);
+        font-weight: bold;
+    }
 }
 
-a.link {color:red;}
-a.visited {color:red;}
 
