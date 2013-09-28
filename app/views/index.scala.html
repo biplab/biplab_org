@@ -1,22 +1,21 @@
 @(menuItems: List[String])
 
 @main("Biplab's homepage") {
-<!DOCTYPE html>
+    <!DOCTYPE html>
     <html>
         <head>
             <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
         </head>
          
         <body>
-         
-        <table id="home-menu">
-            <tr><td><a href="#">Home</a></td></tr>
-            <tr><td><a href="#">Resume</a></td></tr>
-            <tr><td><a href="#">Biography</a></td></tr>
-            <tr><td><a href="#">Photos</a></td></tr>
-            <tr><td><a href="#">Family</a></td></tr>
+        <ul class="MainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Biography</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Family</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
-         
         </body>
     </html>
 }
