@@ -7,10 +7,11 @@ ul.MainMenu {
     font-family: Arial, Verdana;
     font-size: 30px;
     position: fixed;
-    width: 170px;
-    margin: 20% 15%;
+    width: 200px;
+    margin: 20% 13%;
     padding: 0;
     list-style: none;
+    border-right: 3px solid rgb(248,248,248);
 }
 a {
     display: block;
@@ -22,13 +23,16 @@ a {
     color: #2C5463;
     margin-left: 1px;
     white-space: nowrap;
+    float: left;
+    text-align: right;
+    padding-right: 10;
 }
 ul.MainMenu li a:hover 
 {
-    border-bottom: 3px solid rgb(216,216,216);
     -webkit-animation: anim 100ms;
     animation: anim 100ms;
-    /*border-top: 3px solid rgb(216,216,216);*/
+    border-bottom: 3px solid rgb(216,216,216);
+    border-top: 3px solid rgb(216,216,216);
     /*color: #ffffff;*/
     font-weight: bold;
     /*background: #617F8A;*/
