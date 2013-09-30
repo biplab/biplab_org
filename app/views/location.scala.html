@@ -1,0 +1,31 @@
+@(menuItems: List[String])
+
+@main("Biplab's homepage") {
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/boostrap/bootsrap.min.css")">
+            <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/boostrap/bootsrap-theme.min.css")">
+            <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        </head>
+         
+        <body>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="//code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <ul class="MainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Family</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Paintings</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="@routes.Location.index()">Location</a></li>
+        </ul>
+
+        </body>
+    </html>
+}
